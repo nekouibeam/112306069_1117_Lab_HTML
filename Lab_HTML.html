@@ -1,72 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>範例表格</title>
   <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-image: url('your_background_image.jpg');
+      background-size: 500px 300px;
+      background-position: center;
+      font-family: Arial, sans-serif;
+    }
+
     table {
-      border-collapse: collapse;
-      width: 100%;
+      border: 1px solid #000;
+      background-color: white;
     }
 
-    table, th, td {
-      border: 1px solid black;
-    }
-
-    th, td {
-      padding: 15px;
-      text-align: left;
+    th,
+    td {
+      border: 1px solid #000;
+      padding: 8px;
     }
 
     img {
-      max-width: 100%;
-      height: auto;
+      width: 150px;
+      height: 200px;
     }
   </style>
 </head>
 
 <body>
-
-  <table>
+  <table border="1">
     <tr>
-      <td rowspan="3">About--112306069</td>
-      <td rowspan="2" colspan="2">Personal photo<br><img src="path/to/your/image.jpg" alt="personal photo"></td>
+      <th colspan="3">About--112306069</th>
     </tr>
     <tr>
-      <td>Name: <input type="text" name="name"><br>Gender:
-        <input type="radio" name="gender" value="Male"> Male
-        <input type="radio" name="gender" value="Female"> Female
-        <input type="radio" name="gender" value="Other"> Other</td>
+      <td rowspan="3">
+        <!-- 插入圖片的程式碼 -->
+        <img src="personalPic.JPG" alt="圖片描述">
+      </td>
+      <td colspan="2">Name: <input type="text" placeholder="輸入名字"><br>
+        Gender:
+        <label><input type="radio" name="gender" value="Male"> Male</label>
+        <label><input type="radio" name="gender" value="Female"> Female</label>
+        <label><input type="radio" name="gender" value="Other"> Other</label>
+      </td>
     </tr>
     <tr>
-      <td>County: <select name="county">
+      <td>County:
+        <select>
           <option value="Taipei">Taipei</option>
           <option value="Tainan">Tainan</option>
           <option value="Taichung">Taichung</option>
           <option value="Taoyuan">Taoyuan</option>
-        </select><br>Birthday: <input type="date" name="birthday"></td>
-      <td colspan="2">E-mail: <input type="email" name="email"></td>
+        </select>
+      </td>
+      <td>Biryhday: <input type="date"></td>
+    </tr>
+    <tr>
+      <td colspan="2">Email: <input type="text" placeholder="input your Email"></td>
     </tr>
     <tr>
       <td>Hobby</td>
-      <td colspan="2"><input type="checkbox" name="hobby" value="Swimming"> Swimming
-        <input type="checkbox" name="hobby" value="Volleyball"> Volleyball
-        <input type="checkbox" name="hobby" value="Movie"> Movie
-        <input type="checkbox" name="hobby" value="Game"> Game
-        <input type="checkbox" name="hobby" value="Sleep"> Sleep</td>
+      <td colspan="2">
+        <label><input type="checkbox" name="option1" value="Option1"> Swimming</label>
+        <label><input type="checkbox" name="option2" value="Option2"> Volleyball</label>
+        <label><input type="checkbox" name="option3" value="Option3"> Moive</label>
+        <label><input type="checkbox" name="option4" value="Option4"> Game</label>
+        <label><input type="checkbox" name="option5" value="Option5"> sleep</label>
+      </td>
     </tr>
     <tr>
       <td>Skill</td>
-      <td colspan="2"><input type="checkbox" name="skill" value="Java"> Java
-        <input type="checkbox" name="skill" value="HTML"> HTML
-        <input type="checkbox" name="skill" value="Python"> Python
-        <input type="checkbox" name="skill" value="Microsoft Office"> Microsoft Office
-        <input type="checkbox" name="skill" value="Premiere"> Premiere</td>
+      <td colspan="2">
+        <label><input type="checkbox" name="option1" value="Option1"> Java</label>
+        <label><input type="checkbox" name="option2" value="Option2"> HTML</label>
+        <label><input type="checkbox" name="option3" value="Option3"> Python</label>
+        <label><input type="checkbox" name="option4" value="Option4"> Microsoft Office</label>
+        <label><input type="checkbox" name="option5" value="Option5"> Premiere</label>
+      </td>
     </tr>
     <tr>
-      <td>Say something</td>
-      <td colspan="2"><textarea placeholder="Say something here" rows="4" cols="50"></textarea></td>
+      <td>Say Something</td>
+      <td colspan="2"><input type="text" placeholder="Say something here."></td>
+    </tr>
+    <tr>
+      <td colspan="3">
+        <button type="submit">提交</button>
+        <button type="reset">清除</button>
+      </td>
     </tr>
   </table>
 
 </body>
 
+</html>

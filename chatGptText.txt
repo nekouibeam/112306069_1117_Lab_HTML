@@ -1,20 +1,2 @@
-cell(column , row ):
-The cell crossing (column , row ) to (column , row ):
-
-I want to Create a 3*7 table in “HTML” file
-
-The cell crossing (column 1, row 1) to (column 1, row 3): put the text "About--112306069" inside.
-The cell crossing (column 1, row 2) to (column 1, row 4): insert an image as well as image caption named ”personal photo”.
-The cell crossing (column 2, row 2) to (column 3, row 2):insert “Name: ” , followed by a text. Besides, insert “Gender: ”, followed by three radio named  "Male", "Female" and "Other".
-cell(column 2, row 3): insert “County: ”, followed by a dragging-down list, the list should contain four elements: “Taipei”, “Tainan”, “Taichung” and “Taoyuan”.
-cell(column 3, row 3): insert “Birthday: ”, followed by a date option that user can choose a date without typing.
-The cell crossing (column 2, row 4) to (column 3, row 4): insert “E-mail: ”, followed by a mail format input space.
-
-cell(column 1, row 5): put “Hobby” into this cell. 
-The cell crossing (column 2, row 5) to (column 3, row 5): insert five checkbox, each checkbox followed by word “Swimming”, 
-    “Volleyball”, ”Movie”, “Game” and “sleep”.
-cell(column 1, row 6):put “Skill” into this cell. 
-The cell crossing (column 2, row 6) to (column 3, row 6):insert five checkbox, each checkbox followed by word ”Java”, “HTML”, ”Python”, 
-    “Microsoft Office” and “Premiere”.
-cell(column 1, row 7):put “Say something” into this cell. 
-The cell crossing (column 2, row 7) to (column 3, row 7): insert a textarea, and the placeholder should write “Say something here.
+用戶問答:
+https://chat.openai.com/share/35ac339a-e0d2-44ed-a350-39060e2ee7f7
